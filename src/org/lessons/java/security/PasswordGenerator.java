@@ -27,6 +27,9 @@ public class PasswordGenerator {
 		String strYearOfBirth = in.nextLine();
 		
 		
+		in.close();
+		
+		
 		String password = strName + "-" + strSurname + "-" + strFavoriteColor + "-" + strDayOfBirth + "-" + strMonthOfBirth + "-" + strYearOfBirth;
 		
 		System.out.println(password);
