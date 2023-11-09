@@ -30,10 +30,16 @@ public class PasswordGenerator {
 		int intYearOfBirth = Integer.valueOf(strYearOfBirth);
 		
 		
+		
 		in.close();
 		
 		
-		String password = strName + "-" + strSurname + "-" + strFavoriteColor + "-" + intDayOfBirth + "-" + intMonthOfBirth + "-" + intYearOfBirth;
+		
+		int intDateOfBirth = intDayOfBirth + intMonthOfBirth + intYearOfBirth;
+		
+		
+		
+		String password = strName + "-" + strSurname + "-" + strFavoriteColor + "-" + intDateOfBirth;
 		
 		System.out.println(password);
 	}
