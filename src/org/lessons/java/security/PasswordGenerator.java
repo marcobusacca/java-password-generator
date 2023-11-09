@@ -19,20 +19,22 @@ public class PasswordGenerator {
 		
 		System.out.print("Giorno di nascita: ");
 		String strDayOfBirth = in.nextLine();
+		int intDayOfBirth = Integer.valueOf(strDayOfBirth);
 		
 		System.out.print("Mese di nascita: ");
 		String strMonthOfBirth = in.nextLine();
+		int intMonthOfBirth = Integer.valueOf(strMonthOfBirth);
 		
 		System.out.print("Anno di nascita: ");
 		String strYearOfBirth = in.nextLine();
+		int intYearOfBirth = Integer.valueOf(strYearOfBirth);
 		
 		
 		in.close();
 		
 		
-		String password = strName + "-" + strSurname + "-" + strFavoriteColor + "-" + strDayOfBirth + "-" + strMonthOfBirth + "-" + strYearOfBirth;
+		String password = strName + "-" + strSurname + "-" + strFavoriteColor + "-" + intDayOfBirth + "-" + intMonthOfBirth + "-" + intYearOfBirth;
 		
 		System.out.println(password);
-		
 	}
 }
